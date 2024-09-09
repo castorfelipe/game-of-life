@@ -1,6 +1,6 @@
-import { Fragment } from "react"
-import Home from "./pages/Home"
-import { createGlobalStyle } from "styled-components"
+import { Fragment } from "react";
+import { createGlobalStyle } from "styled-components";
+import Canvas from "./components/GameOfLife";
 
 const GlobalStyles = createGlobalStyle`
     html, body, #root {
@@ -11,11 +11,14 @@ const GlobalStyles = createGlobalStyle`
 
     * {
         box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Inter;
     }
 
     body {
         min-height: 100vh;
-        background: linear-gradient(#171c28, #2f3b54);
+        background: linear-gradient(#181825, #313244);
         color: #d7dce2;
     }
 
@@ -23,15 +26,16 @@ const GlobalStyles = createGlobalStyle`
         background-color: #1d2433;
         image-rendering: pixelated;
     }
-`
+`;
+
 
 function App() {
     return (
         <Fragment>
             <GlobalStyles />
-            <Home />
+            <Canvas />
         </Fragment>
-    )
+    );
 }
 
-export default App
+export default App;
