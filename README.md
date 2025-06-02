@@ -1,6 +1,6 @@
 # game-of-life
-## Jogo da vida feito em Typescript & React
-Hospedado [aqui](https://castorfelipe.github.io/)
+Typescript implementation of the Conway's Game of Life
+Hosted [here](https://castorfelipe.github.io/)
 
 
-![](https://i.imgur.com/CJJHZfT.png)
+![](https://i.imgur.com/JEXJpX2.png)
